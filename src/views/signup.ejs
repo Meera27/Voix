@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGN UP</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<style>
+  input {
+    border: 0;
+    border-bottom: solid 1px #000;
+    outline: none;
+  }
+
+  body {
+    background-color: #8AC7DB;
+  }
+
+  .main-frame {
+    background-color: white !important;
+  }
+</style>
+
+<body>
+  <ul class="nav justify-content-center" style="height: 67px; background-color: #1E5162;">
+    <li class="nav-item mt-4" style="padding-left: 30px;">
+      <a class="nav-link" style="color: white; font-family: 'Josefin Sans', sans-serif; font-size: 23px; "><b>VOIX</b>
+      </a>
+    </li>
+    <!-- <li class="nav-item mt-4">
+      <a class="nav-link" style="color: white; font-family: 'Josefin Sans', sans-serif; font-size: 23px;"
+        href="/home">Home</a>
+    </li> -->
+    <li class="nav-item mt-4">
+      <a class="nav-link" style="color: white; font-size: 23px; font-family: 'Josefin Sans', sans-serif;"
+        href="#footer">About Us</a>
+    </li>
+    <li class="nav-item mt-4">
+      <a class="nav-link" style="color: white; font-size: 23px; font-family: 'Josefin Sans', sans-serif;"
+        href="/login">Login</a>
+    </li>
+  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6">
+        <div class="panel">
+          <div class="panel-body main-frame">
+            <div
+              style="box-shadow: 0 4px 8px 0 rgba(103,14,40,0.2), 0 6px 20px 0 rgba(103,14,40,0.19); height: auto;width:auto">
+              <div class="to-right p-3" style="margin-top:60px">
+                <form id="newform" action="/signup/auth" method="POST">
+                  <div class="form-row">
+                    <div class="col-lg-6 mx-auto pt-5">
+                      <input type="text" id="fname" class="fnames" size="30" placeholder="First name"
+                        aria-label="First name" name="fname" required />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-lg-6 mx-auto pt-5">
+                      <input type="text" id="lname" class="fnames" size="30" placeholder="Last name"
+                        aria-label="Last name" name="lname" required />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="col-lg-6 mx-auto pt-5">
+                      <input type="text" id="number" class="fnames" size="30" placeholder="Telephone" name="phone"
+                        required />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-lg-6 mx-auto pt-5">
+                      <input type="email" id="exampleInputEmail1" size="30" class="fnames" placeholder="Email"
+                        aria-describedby="emailHelp" name="email" required />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="col-lg-6 mx-auto pt-5">
+                      <input type="password" type="password" size="30" class="fnames" id="exampleInputPassword1"
+                        placeholder="Password" name="password" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-7 mx-auto" style="text-align: center;">
+                    <label for="error" style="color: red; text-align: center;">
+                      <%= (typeof email !="undefined" ? email : "" ) %>
+                        <%= (typeof error !="undefined" ? error : "" ) %>
+                    </label>
+                  </div>
+
+              </div>
+              <div class="form-row">
+                <div class="col-lg-6 mx-auto" style="text-align:center;">
+                  <button type=" submit" class="btn btn-outline-dark btn-lg mt-3 mb-5 lbtn" id="submitme">Sign
+                    Up</button>
+                </div>
+              </div>
+              <div class="col-lg-7 mx-auto" style="text-align: center;">
+                <p style="color:#5BB8FE; text-align: center;">Already a User? <a href="/login">Login</a></p>
+              </div>
+              <div style="height: 20px;">
+
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+
+  </div>
+  </div>
+  </div>
+  <footer>
+    <div class="footer-top" id="footer" style=" margin-top: 200px;  background-color:#1E5162">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+            <h3 style="color: white;">VOIX</h3>
+            <div class="address mt-3">
+              <p style="color: white;">
+              <p style="color: white;">An E-mail System for visually impaired</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+            <h3 style="color: white;">Contact</h3>
+            <div class="address mt-3">
+              <p style="color: white;"><i class="fa fa-map-marker"></i> Queens, 10136 Southampton, England</p>
+              <p style="color: white;"><i class="fa fa-phone"></i> Phone: (02380 210610)</p>
+              <p style="color: white;"><i class="fa fa-envelope"></i> Email: <a
+                  href="mailto:hello@domain.com">queens@domain.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

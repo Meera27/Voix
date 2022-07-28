@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:ital,wght@1,100&display=swap');
+.index_body{
+    background-color: #8AC7DB;
+}
+body{
+  background-color: #8AC7DB !important;
+}
+.main-frame{
+  background-color: white !important;
+}
+
+.blob {
+	background: #1E5162;
+	border-radius: 50%;
+	margin: auto;
+	height: 100px;
+	width: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+.fnames{
+  margin: auto;
+  display: block;
+}
+
+input{
+  border:0;
+ border-bottom:solid 1px #000;
+ outline:none;
+}
+button {
+  border-radius: 50%;
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        }
+    
+        70% {
+            transform: scale(1.2);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        }
+    
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+    }
+
+  #masthead {
+    min-height:100px;
+    background-color:#1E5162;
+    color:#aaaacc;
+  }
+  
+  #masthead h1 {
+    font-size: 55px;
+    line-height: 1;
+    /* color:#fefeff; */
+    margin-top:50px;
+  }
+  
+  /* #masthead .well {
+    margin-top:31px;
+    background-color: #143e4c;
+    border-color:#00796B;
+    color:#efefff;
+    min-height:127px;
+  } */
+  .top-spacer {
+    background-color:#ffffff;
+    height:40px;
+  }
+
+
+  /* FOR GOOGLE INTEGRATION */
